@@ -16,8 +16,7 @@ const theme: DefaultTheme = {
     },
   },
   colors: {
-    purple: '#1a0c4c',
-    gradient: 'linear-gradient(45deg, #465af1, #b66aff)',
+    grey: '#F2F2F2',
   },
 };
 

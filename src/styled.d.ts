@@ -19,8 +19,7 @@ declare module 'styled-components' {
       };
     };
     colors: {
-      purple: string;
-      gradient: string;
+      grey: string;
     };
   }
 }

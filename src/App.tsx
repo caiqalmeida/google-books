@@ -1,6 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 
+import Router from './router';
 import { theme } from './styles/theme';
 import GlobalStyles from './styles/global';
 
@@ -9,7 +10,7 @@ function App() {
     <>
       <ThemeProvider theme={theme}>
         <GlobalStyles />
-        <h1>Hello Books</h1>
+        <Router />
       </ThemeProvider>
     </>
   );

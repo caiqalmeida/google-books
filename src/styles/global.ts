@@ -8,6 +8,11 @@ const GlobalStyles = createGlobalStyle`
     font-size: 10px;
   }
 
+  body {
+    min-height: 100vh;
+    width: 100%;
+  }
+
   body,
     input,
     textarea,
@@ -17,12 +22,24 @@ const GlobalStyles = createGlobalStyle`
       font-size: ${({ theme }) => theme.font.sizes.medium};
     }
 
+    input {
+      border: 0;
+    }
+
+    input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+      font-size: ${({ theme }) => theme.font.sizes.xxlarge};
+    }
+
   html {
     font-size: 62.5%;
   }
 
   body {
-    background-color: ${({ theme }) => theme.colors.purple};
+    background-color: ${({ theme }) => theme.colors.grey};
   }
 `;
 
