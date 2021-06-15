@@ -1,26 +1,25 @@
 import styled from 'styled-components';
 
 export const SearchWrapper = styled.div`
-  display: flex;
-  align-items: center;
   padding: 15px;
   width: auto;
-  max-width: 300px;
-  background-color: #fff;
-
-  border-radius: 24px;
-  border: 1px solid #dfe1e5;
-  box-shadow: none;
+  max-width: 336px;
   margin: 0 auto;
-  transition: box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
 
-  &:hover {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  }
+  background: #fdfcfc;
+  box-shadow: 5px 5px 80px rgba(212, 173, 134, 0.122623);
+  border-radius: 10px;
 `;
 
 export const TextInput = styled.input`
   height: 100%;
   width: 100%;
-  margin-left: 15px;
+  margin-left: 11px;
+  color: #54565a;
+
+  &::placeholder {
+    color: #54565a;
+  }
 `;

@@ -5,7 +5,11 @@ import 'styled-components';
 declare module 'styled-components' {
   export interface DefaultTheme {
     font: {
-      family: string;
+      family: {
+        source: string;
+        playfair: string;
+        roboto: string;
+      };
       light: number;
       normal: number;
       bold: number;
@@ -19,7 +23,17 @@ declare module 'styled-components' {
       };
     };
     colors: {
-      grey: string;
+      white_500: string;
+      gray_100: string;
+      gray_200: string;
+      gray_500: string;
+      black_500: string;
+      black_600: string;
+      black_650: string;
+      black_700: string;
+      black_800: string;
+      orange_500: string;
+      blue_500: string;
     };
   }
 }

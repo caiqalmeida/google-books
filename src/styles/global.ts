@@ -18,28 +18,28 @@ const GlobalStyles = createGlobalStyle`
     textarea,
     select,
     button {
-      font-family: ${({ theme }) => theme.font.family};
+      font-family: ${({ theme }) => theme.font.family.source};
       font-size: ${({ theme }) => theme.font.sizes.medium};
     }
 
-    input {
-      border: 0;
+    img {
+      max-width: 100%;
     }
 
-    input:focus, textarea:focus, select:focus{
-        outline: none;
-    }
+  input {
+    border: 0;
+  }
 
-    h1,h2,h3,h4,h5,h6 {
-      font-size: ${({ theme }) => theme.font.sizes.xxlarge};
-    }
+  input:focus, textarea:focus, select:focus{
+      outline: none;
+  }
 
   html {
     font-size: 62.5%;
   }
 
   body {
-    background-color: ${({ theme }) => theme.colors.grey};
+    background-color: ${({ theme }) => theme.colors.gray_100};
   }
 `;
 
