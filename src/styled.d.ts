@@ -30,6 +30,7 @@ declare module 'styled-components' {
       black_500: string;
       black_600: string;
       black_650: string;
+      black_680: string;
       black_700: string;
       black_750: string;
       black_800: string;

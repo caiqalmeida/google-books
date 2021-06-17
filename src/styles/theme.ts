@@ -9,7 +9,7 @@ const theme: DefaultTheme = {
     },
     light: 300,
     normal: 400,
-    bold: 600,
+    bold: 700,
     sizes: {
       xsmall: '1.2rem',
       small: '1.4rem',
@@ -29,6 +29,7 @@ const theme: DefaultTheme = {
     black_500: '#54565A',
     black_600: '#3F4043',
     black_650: 'rgba(49, 49, 49, 0.6)',
+    black_680: 'rgba(49, 49, 49, 0.8)',
     black_700: '#313131',
     black_750: '#36383A',
     black_800: '#2A2B26',

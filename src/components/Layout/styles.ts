@@ -6,4 +6,5 @@ export const LayoutWrapper = styled.div`
   padding: 50px 24px;
   position: relative;
   background-color: ${({ theme }) => theme.colors.yellow_100};
+  min-height: 100vh;
 `;
