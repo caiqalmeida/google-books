@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const SearchWrapper = styled.div`
   padding: 15px;
   width: auto;
-  max-width: 336px;
   margin: 0 auto;
   display: flex;
   align-items: center;

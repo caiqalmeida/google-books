@@ -21,8 +21,8 @@ const theme: DefaultTheme = {
   },
   colors: {
     white_500: '#FEFEFE',
+    white_600: '#FFFFFF',
 
-    gray_100: '#FDF9F4',
     gray_200: '#E7E7E1',
     gray_500: '#74776D',
 
@@ -30,7 +30,11 @@ const theme: DefaultTheme = {
     black_600: '#3F4043',
     black_650: 'rgba(49, 49, 49, 0.6)',
     black_700: '#313131',
+    black_750: '#36383A',
     black_800: '#2A2B26',
+
+    yellow_100: '#FFFCF9',
+    yellow_200: '#fff6e5',
 
     orange_500: '#FF6978',
 

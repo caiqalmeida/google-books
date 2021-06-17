@@ -24,14 +24,17 @@ declare module 'styled-components' {
     };
     colors: {
       white_500: string;
-      gray_100: string;
+      white_600: string;
       gray_200: string;
       gray_500: string;
       black_500: string;
       black_600: string;
       black_650: string;
       black_700: string;
+      black_750: string;
       black_800: string;
+      yellow_100: string;
+      yellow_200: string;
       orange_500: string;
       blue_500: string;
     };

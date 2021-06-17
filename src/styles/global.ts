@@ -8,7 +8,7 @@ const GlobalStyles = createGlobalStyle`
     font-size: 10px;
   }
 
-  body {
+  body, #root {
     min-height: 100vh;
     width: 100%;
   }
@@ -36,10 +36,6 @@ const GlobalStyles = createGlobalStyle`
 
   html {
     font-size: 62.5%;
-  }
-
-  body {
-    background-color: ${({ theme }) => theme.colors.gray_100};
   }
 `;
 
