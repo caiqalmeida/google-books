@@ -8,24 +8,24 @@ import {
   NavbarWrapper,
 } from './styles';
 
-import HomeIcon from '../../assets/img/nav_home.svg';
-import LibrariesIcon from '../../assets/img/nav_book.svg';
-import ProfileIcon from '../../assets/img/nav_user.svg';
+import { ReactComponent as HomeIcon } from '../../assets/img/nav_home.svg';
+import { ReactComponent as LibrariesIcon } from '../../assets/img/nav_book.svg';
+import { ReactComponent as ProfileIcon } from '../../assets/img/nav_user.svg';
 
 const Navbar = () => {
   return (
     <NavbarWrapper>
       <NavbarList>
-        <NavbarItem>
-          <NavbarItemImg src={HomeIcon} alt="Home icon" />
+        <NavbarItem exact to="/" activeClassName="selected">
+          <HomeIcon stroke="pink" />
           <NavbarItemText>Home</NavbarItemText>
         </NavbarItem>
-        <NavbarItem>
-          <NavbarItemImg src={LibrariesIcon} alt="Libraries icon" />
+        <NavbarItem exact to="/details" activeClassName="selected">
+          <LibrariesIcon />
           <NavbarItemText>Libraries</NavbarItemText>
         </NavbarItem>
-        <NavbarItem>
-          <NavbarItemImg src={ProfileIcon} alt="Profile icon" />
+        <NavbarItem exact to="/search" activeClassName="selected">
+          <ProfileIcon />
           <NavbarItemText>Profile</NavbarItemText>
         </NavbarItem>
       </NavbarList>

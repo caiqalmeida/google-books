@@ -22,9 +22,13 @@ const GlobalStyles = createGlobalStyle`
       font-size: ${({ theme }) => theme.font.sizes.medium};
     }
 
-    img {
-      max-width: 100%;
-    }
+  img {
+    max-width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+  }
 
   input {
     border: 0;
