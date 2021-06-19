@@ -25,10 +25,14 @@ export const BookCoverWrapper = styled.div`
   margin: 15px auto -36px;
   display: flex;
   justify-content: center;
+
+  img {
+    min-height: 234px;
+  }
 `;
 
 export const BookContent = styled.main`
-  padding: 0 20px;
+  padding: 0 20px 20px;
 `;
 
 export const BookTitle = styled.h1`

@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+
+import { RouteComponentProps, Link, useLocation } from 'react-router-dom';
 
 import {
   BackIconWrapper,
@@ -20,30 +22,59 @@ import BookOpenIcon from '../../assets/img/book-open_icon.svg';
 import HeadphoneIcon from '../../assets/img/headphones_icon.svg';
 import ShareIcon from '../../assets/img/share_icon.svg';
 
-export const Details = () => {
+interface MatchParams {
+  bookId: string;
+}
+
+interface BookInterface {
+  imageLinks: {
+    thumbnail: string;
+  };
+  title: string;
+  subtitle: string;
+  authors: string[];
+  description: string;
+}
+
+export const Details = ({ match }: RouteComponentProps<MatchParams>) => {
+  const {
+    params: { bookId },
+  } = match;
+
+  const [book, setBook] = useState<BookInterface | null>(null);
+
+  useEffect(() => {
+    async function getBook() {
+      const response = await fetch(
+        `https://www.googleapis.com/books/v1/volumes/${bookId}`
+      );
+      const data = await response.json();
+      const bookData = data.volumeInfo;
+      console.log('book', bookData);
+      setBook(bookData);
+    }
+    getBook();
+  }, [bookId]);
+
   return (
     <PageWrapper>
       <Header>
         <BackIconWrapper>
-          <img src={BackIcon} alt="Back icon" />
+          <Link to="/">
+            <img src={BackIcon} alt="Back icon" />
+          </Link>
         </BackIconWrapper>
         <BookCoverWrapper>
-          <img src={BookCover} alt="Book cover" />
+          <img src={book?.imageLinks.thumbnail} alt="Book cover" />
         </BookCoverWrapper>
       </Header>
 
       <BookContent>
         <BookTitle>
-          <span className="bold">Hooked</span> : How to Build Habid-Forming
-          Products
+          <span className="bold">{book?.title}</span> : {book?.subtitle}
         </BookTitle>
-        <BookAuthor>Nir Eyal</BookAuthor>
-        <BookText>
-          How do successful companies create products people can’t put down? Why
-          do some products capture widespread attention while others flop?Why do
-          some products capture widespread attention while others flop?Why do
-          some products capture widespread attention while others flop?
-        </BookText>
+        <BookAuthor>{book?.authors?.join(', ')}</BookAuthor>
+        <BookText>{book?.description}</BookText>
       </BookContent>
 
       <FloatingButtonsWrapper>

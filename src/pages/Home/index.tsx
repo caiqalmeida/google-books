@@ -22,6 +22,8 @@ import {
   CardCurrentSubTitle,
   CardCurrentSmallText,
   CardCurrentFooter,
+  ListOfBooks,
+  SectionNewBook,
 } from './styles';
 
 import InfoIcon from '../../assets/img/info_icon.svg';
@@ -39,29 +41,49 @@ export const Home = () => {
         </GreetingsTitle>
         <Emoji>👋</Emoji>
       </GreetingsWrapper>
-      <Section>
+
+      <SectionNewBook>
         <SectionHeader>
           <SectionTitle>Discover new book</SectionTitle>
           <SectionLink>More</SectionLink>
         </SectionHeader>
-        <CardNewBook>
-          <CardContent>
-            <header>
-              <CardTitle>Hooked</CardTitle>
-              <CardSubTitle>Nir Eyal</CardSubTitle>
-            </header>
-            <CardFooter>
-              <img src={InfoIcon} alt="Info icon" />
-              <CardSmallText>
-                <span className="bold">120+ </span> Read Now
-              </CardSmallText>
-            </CardFooter>
-          </CardContent>
-          <CardImageWrapper>
-            <img src={NewBookCover} alt="Book hooked cover" />
-          </CardImageWrapper>
-        </CardNewBook>
-      </Section>
+        <ListOfBooks>
+          <CardNewBook>
+            <CardContent>
+              <header>
+                <CardTitle>Hooked</CardTitle>
+                <CardSubTitle>Nir Eyal</CardSubTitle>
+              </header>
+              <CardFooter>
+                <img src={InfoIcon} alt="Info icon" />
+                <CardSmallText>
+                  <span className="bold">120+ </span> Read Now
+                </CardSmallText>
+              </CardFooter>
+            </CardContent>
+            <CardImageWrapper>
+              <img src={NewBookCover} alt="Book hooked cover" />
+            </CardImageWrapper>
+          </CardNewBook>
+          <CardNewBook>
+            <CardContent>
+              <header>
+                <CardTitle>Hooked</CardTitle>
+                <CardSubTitle>Nir Eyal</CardSubTitle>
+              </header>
+              <CardFooter>
+                <img src={InfoIcon} alt="Info icon" />
+                <CardSmallText>
+                  <span className="bold">120+ </span> Read Now
+                </CardSmallText>
+              </CardFooter>
+            </CardContent>
+            <CardImageWrapper>
+              <img src={NewBookCover} alt="Book hooked cover" />
+            </CardImageWrapper>
+          </CardNewBook>
+        </ListOfBooks>
+      </SectionNewBook>
 
       <Section>
         <SectionHeader>

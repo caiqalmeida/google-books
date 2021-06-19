@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import FloatingGeometric from '../../assets/img/floating_geometric_card_home.svg';
 
 export const GreetingsWrapper = styled.div`
   display: flex;
@@ -27,6 +28,10 @@ export const Section = styled.section`
   margin: 30px auto;
 `;
 
+export const SectionNewBook = styled.section`
+  margin: 30px auto;
+`;
+
 export const SectionHeader = styled.header`
   display: flex;
   justify-content: space-between;
@@ -44,8 +49,19 @@ export const SectionLink = styled.a`
   color: ${({ theme }) => theme.colors.blue_500};
 `;
 
+export const ListOfBooks = styled.div`
+  display: flex;
+
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+`;
+
 export const CardNewBook = styled.div`
-  width: 272px;
+  min-width: 272px;
+  margin-right: 10px;
   height: 139px;
   padding: 15px 20px;
   background: #00173d;
@@ -54,6 +70,12 @@ export const CardNewBook = styled.div`
 
   display: flex;
   justify-content: space-between;
+
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 `;
 
 export const CardContent = styled.div`
@@ -98,6 +120,25 @@ export const CardSmallText = styled.p`
 
 export const CardImageWrapper = styled.div`
   max-width: 26.4%;
+  position: relative;
+
+  img {
+    border-radius: 5px;
+    min-height: 109px;
+    min-width: 73px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -36px;
+    width: 100px;
+    height: 100px;
+    height: 100%;
+    background-image: url(${FloatingGeometric});
+    background-repeat: no-repeat;
+  }
 `;
 
 export const CardCurrentBook = styled.div`
