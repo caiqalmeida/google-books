@@ -52,8 +52,8 @@ export const SectionLink = styled.a`
 `;
 
 export const ListOfBooks = styled.div`
+  margin-right: -24px;
   display: flex;
-
   overflow-x: auto;
 
   &::-webkit-scrollbar {
