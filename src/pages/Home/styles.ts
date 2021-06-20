@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import FloatingGeometric from '../../assets/img/floating_geometric_card_home.svg';
+import BackgroundCardNewBook from '../../assets/img/background_card_newbook.svg';
+import BackgroundCardCurrentBook from '../../assets/img/background_card_currentbook.svg';
 
 export const GreetingsWrapper = styled.div`
   display: flex;
@@ -60,22 +62,21 @@ export const ListOfBooks = styled.div`
 `;
 
 export const CardNewBook = styled.div`
+  height: 139px;
+  width: 272px;
   min-width: 272px;
   margin-right: 10px;
-  height: 139px;
   padding: 15px 20px;
-  background: #00173d;
-  box-shadow: 2px 4px 48px rgba(154, 175, 209, 0.62134);
+  background-image: url(${BackgroundCardNewBook});
   border-radius: 5px;
 
   display: flex;
   justify-content: space-between;
+`;
 
-  transition: transform 0.3s ease;
-
-  &:hover {
-    transform: scale(1.05);
-  }
+export const CardNewBookPurple = styled(CardNewBook)`
+  background-image: none;
+  background-color: #451475;
 `;
 
 export const CardContent = styled.div`
@@ -93,6 +94,11 @@ export const CardTitle = styled.h2`
   color: ${({ theme }) => theme.colors.white_500};
   letter-spacing: 2px;
   margin-bottom: 5px;
+
+  white-space: nowrap;
+  max-width: 138px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 `;
 
 export const CardSubTitle = styled.h3`
@@ -141,6 +147,8 @@ export const CardImageWrapper = styled.div`
   }
 `;
 
+// Card - Current Book
+
 export const CardCurrentBook = styled.div`
   margin-left: -24px;
   margin-top: 30px;
@@ -148,7 +156,9 @@ export const CardCurrentBook = styled.div`
   height: 100px;
   padding: 10px 20px;
   display: flex;
-  background: #eef5db;
+  /* background: #eef5db; */
+  background-image: url(${BackgroundCardCurrentBook});
+  background-position: 0px -41px;
   box-shadow: 0px 3px 45px rgba(121, 141, 67, 0.115084);
   border-radius: 0px 3px 3px 0px;
 `;

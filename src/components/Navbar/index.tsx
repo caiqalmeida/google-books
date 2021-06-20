@@ -2,7 +2,7 @@ import React from 'react';
 
 import {
   NavbarItem,
-  NavbarItemImg,
+  NavbarItemLink,
   NavbarItemText,
   NavbarList,
   NavbarWrapper,
@@ -16,15 +16,15 @@ const Navbar = () => {
   return (
     <NavbarWrapper>
       <NavbarList>
-        <NavbarItem exact to="/" activeClassName="selected">
+        <NavbarItemLink exact to="/" activeClassName="selected">
           <HomeIcon stroke="pink" />
           <NavbarItemText>Home</NavbarItemText>
-        </NavbarItem>
-        <NavbarItem exact to="/details" activeClassName="selected">
+        </NavbarItemLink>
+        <NavbarItem>
           <LibrariesIcon />
           <NavbarItemText>Libraries</NavbarItemText>
         </NavbarItem>
-        <NavbarItem exact to="/search" activeClassName="selected">
+        <NavbarItem>
           <ProfileIcon />
           <NavbarItemText>Profile</NavbarItemText>
         </NavbarItem>

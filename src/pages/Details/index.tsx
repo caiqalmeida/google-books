@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
-import { RouteComponentProps, Link, useLocation } from 'react-router-dom';
+import { RouteComponentProps, Link } from 'react-router-dom';
+import parse from 'html-react-parser';
 
 import {
   BackIconWrapper,
@@ -17,7 +18,6 @@ import {
 } from './styles';
 
 import BackIcon from '../../assets/img/back_icon.svg';
-import BookCover from '../../assets/img/book_hooked_big.svg';
 import BookOpenIcon from '../../assets/img/book-open_icon.svg';
 import HeadphoneIcon from '../../assets/img/headphones_icon.svg';
 import ShareIcon from '../../assets/img/share_icon.svg';
@@ -65,7 +65,15 @@ export const Details = ({ match }: RouteComponentProps<MatchParams>) => {
           </Link>
         </BackIconWrapper>
         <BookCoverWrapper>
-          <img src={book?.imageLinks.thumbnail} alt="Book cover" />
+          {/* book?.volumeInfo.imageLinks?.thumbnail ??
+                        imagePlaceholder */}
+          <img
+            src={
+              book?.imageLinks?.thumbnail ??
+              'https://via.placeholder.com/161x234?text=No+Cover'
+            }
+            alt="Book cover"
+          />
         </BookCoverWrapper>
       </Header>
 
@@ -74,7 +82,7 @@ export const Details = ({ match }: RouteComponentProps<MatchParams>) => {
           <span className="bold">{book?.title}</span> : {book?.subtitle}
         </BookTitle>
         <BookAuthor>{book?.authors?.join(', ')}</BookAuthor>
-        <BookText>{book?.description}</BookText>
+        <BookText>{book ? parse(book.description) : ''}</BookText>
       </BookContent>
 
       <FloatingButtonsWrapper>

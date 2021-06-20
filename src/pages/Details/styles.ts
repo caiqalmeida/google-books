@@ -1,11 +1,15 @@
 import styled from 'styled-components';
 
+import FloatingGeometric from '../../assets/img/floating_geometrics_details.svg';
+import FloatingGeometricTop from '../../assets/img/floating_geometrics_details_top.svg';
+
 export const PageWrapper = styled.div`
   position: relative;
   min-height: 100vh;
 `;
 
 export const Header = styled.header`
+  position: relative;
   width: 100%;
   height: 282px;
   margin-bottom: 67px;
@@ -14,6 +18,17 @@ export const Header = styled.header`
 
   display: flex;
   flex-direction: column;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 61px;
+    height: 85px;
+    background-image: url(${FloatingGeometricTop});
+    background-repeat: no-repeat;
+  }
 `;
 export const BackIconWrapper = styled.div`
   margin-top: 55px;
@@ -21,10 +36,14 @@ export const BackIconWrapper = styled.div`
 `;
 
 export const BookCoverWrapper = styled.div`
-  width: 40%;
+  width: 100%;
   margin: 15px auto -36px;
   display: flex;
   justify-content: center;
+
+  background-image: url(${FloatingGeometric});
+  background-repeat: no-repeat;
+  background-position: 37% 0%;
 
   img {
     min-height: 234px;
@@ -56,11 +75,17 @@ export const BookAuthor = styled.h2`
   margin-bottom: 10px;
 `;
 
-export const BookText = styled.p`
+export const BookText = styled.div`
   font-size: ${({ theme }) => theme.font.sizes.small};
   line-height: 2.5rem;
   letter-spacing: 0.2px;
   color: ${({ theme }) => theme.colors.black_650};
+  & p {
+    font-size: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+  }
 `;
 
 export const FloatingButtonsWrapper = styled.div`

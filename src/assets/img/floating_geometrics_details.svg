@@ -1,20 +1,16 @@
-<svg width="329" height="282" viewBox="0 0 329 282" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="233" height="190" viewBox="0 0 233 190" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g clip-path="url(#clip0)">
-<path d="M197.857 271.751C209.87 277.353 224.15 272.156 229.751 260.143C235.353 248.13 230.156 233.85 218.143 228.249C206.13 222.647 191.85 227.844 186.249 239.857C180.647 251.87 185.844 266.15 197.857 271.751Z" fill="url(#pattern0)"/>
-<path d="M296.869 77.3154C321.896 88.9857 351.645 78.1579 363.315 53.1309C374.986 28.1039 364.158 -1.64511 339.131 -13.3154C314.104 -24.9857 284.355 -14.1579 272.685 10.8691C261.014 35.8961 271.842 65.6451 296.869 77.3154Z" fill="url(#pattern1)"/>
-<path d="M214 110C220.627 110 226 104.627 226 98C226 91.3726 220.627 86 214 86C207.373 86 202 91.3726 202 98C202 104.627 207.373 110 214 110Z" stroke="#4550A7" stroke-width="2"/>
-<path d="M58.5 178C75.897 178 90 163.897 90 146.5C90 129.103 75.897 115 58.5 115C41.103 115 27 129.103 27 146.5C27 163.897 41.103 178 58.5 178Z" fill="#00173D"/>
-<path d="M7.5 140C11.6421 140 15 136.642 15 132.5C15 128.358 11.6421 125 7.5 125C3.35786 125 0 128.358 0 132.5C0 136.642 3.35786 140 7.5 140Z" fill="#FF6978"/>
+<path d="M197.857 186.751C209.87 192.353 224.15 187.156 229.751 175.143C235.353 163.13 230.156 148.85 218.143 143.249C206.13 137.647 191.85 142.844 186.249 154.857C180.647 166.87 185.844 181.15 197.857 186.751Z" fill="url(#pattern0)"/>
+<path d="M214 25C220.627 25 226 19.6274 226 13C226 6.37258 220.627 1 214 1C207.373 1 202 6.37258 202 13C202 19.6274 207.373 25 214 25Z" stroke="#4550A7" stroke-width="2"/>
+<path d="M58.5 93C75.897 93 90 78.897 90 61.5C90 44.103 75.897 30 58.5 30C41.103 30 27 44.103 27 61.5C27 78.897 41.103 93 58.5 93Z" fill="#00173D"/>
+<path d="M7.5 55C11.6421 55 15 51.6421 15 47.5C15 43.3579 11.6421 40 7.5 40C3.35786 40 0 43.3579 0 47.5C0 51.6421 3.35786 55 7.5 55Z" fill="#FF6978"/>
 </g>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0" transform="scale(0.0294118 0.166667)"/>
 </pattern>
-<pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0" transform="scale(0.0294118 0.166667)"/>
-</pattern>
 <clipPath id="clip0">
-<rect width="329" height="282" fill="white"/>
+<rect width="233" height="190" fill="white"/>
 </clipPath>
 <image id="image0" width="34" height="6" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAGCAYAAACmekziAAAABGdBTUEAALGOfPtRkwAAAY5JREFUKBW9Uj1IQlEUPuf6pCQofI9+CLMhaynInwyKfrYgGgxRCyEICpyaImh0aomaJKjFagjhUVRDRJNNDv61tLokgRROiZV6T/cFwitsKjpwOYfvnPN9H/deA/xjdM4stTS19W81dw+VN0OBfDwep7o81gt9DofDTByux35bK3afh4BHAPGMgKYByIKElwjswmTCmy9G2p1+G6fqOgHaEPGItbLzp7j68pMJ2+xaU7Hw6AGiVTFTIYQ7JMhKzJgtpGI5wUFml98KvBZBogGGUug5q95qfBrOeHVeaGn77k8jst03LtxuANIkAu4hwwyv8RVEmALAK4Z40ovKdTp9UNFIlBH/KK/VloFgQcxkBLSPxCqCw05IDrHjEMJmIZISvWHGcLerj23fq+q7tv89rBNBM8oOb4IIOhjAjslkiOYTark+aBnzy6VXHgDgQSAcFKJR0ZsTDysJc4dkMB4Xk7GH+rw+a+Sl0ptLkiBXSJ7m9L2GteL0ebU/0bCpA2X3Yo/s9Ia129PBf1Z+AO3ViTcdfWOLAAAAAElFTkSuQmCC"/>
 </defs>

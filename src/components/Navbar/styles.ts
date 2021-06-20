@@ -20,7 +20,18 @@ export const NavbarList = styled.div`
   align-items: center;
 `;
 
-export const NavbarItem = styled(NavLink)`
+export const NavbarItem = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  svg {
+    stroke: ${({ theme }) => theme.colors.gray_300};
+    margin-bottom: 10px;
+  }
+`;
+
+export const NavbarItemLink = styled(NavLink)`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,10 +44,6 @@ export const NavbarItem = styled(NavLink)`
   &.selected {
     span {
       color: ${({ theme }) => theme.colors.black_700};
-    }
-
-    svg {
-      stroke: ${({ theme }) => theme.colors.black_900};
     }
   }
 `;
